@@ -1,0 +1,246 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/home_background">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:background="@drawable/home_topbackground"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="32dp">
+
+                <Button
+                    android:id="@+id/btn_local"
+                    android:layout_width="match_parent"
+                    android:layout_height="128dp"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginRight="8dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_weight="1"
+                    android:drawableStart="@drawable/home_local"
+                    android:paddingStart="16dp"
+                    android:background="@drawable/bg_home_buttonstyle"
+                    android:text="我的位置"
+                    android:textSize="15sp"
+                    android:textAllCaps="false" />
+
+                <Button
+                    android:id="@+id/btn_id"
+                    android:layout_width="match_parent"
+                    android:layout_height="128dp"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginRight="16dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_weight="1"
+                    android:drawableStart="@drawable/home_id"
+                    android:paddingStart="16dp"
+                    android:background="@drawable/bg_home_buttonstyle2"
+                    android:text="身份信息"
+                    android:textSize="15sp"
+                    android:textAllCaps="false" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/btn_cellphone"
+                    android:layout_width="match_parent"
+                    android:layout_height="128dp"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginRight="8dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_weight="1"
+                    android:drawableStart="@drawable/home_cellphone"
+                    android:paddingStart="16dp"
+                    android:background="@drawable/bg_home_buttonstyle3"
+                    android:text="一键呼叫"
+                    android:textSize="15sp"
+                    android:textAllCaps="false" />
+
+                <Button
+                    android:id="@+id/btn_hospital"
+                    android:layout_width="match_parent"
+                    android:layout_height="128dp"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginRight="16dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_weight="1"
+                    android:drawableStart="@drawable/home_hospital"
+                    android:paddingStart="16dp"
+                    android:background="@drawable/bg_home_buttonstyle4"
+                    android:text="医院简介"
+                    android:textSize="15sp"
+                    android:textAllCaps="false" />
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/tv_middlesogan"
+                android:layout_width="wrap_content"
+                android:layout_height="96dp"
+                android:layout_marginTop="96dp"
+                android:layout_gravity="bottom|center"
+                android:background="@color/colorTransparent"
+                android:text="常用养老健康网站"
+                android:textSize="24sp" />
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/btn_webview1"
+                    android:layout_width="match_parent"
+                    android:layout_height="128dp"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginRight="8dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/bg_home_wv"
+                    android:drawableStart="@drawable/home_wv_gxykd"
+                    android:paddingStart="16dp"
+                    android:text="广西医科大"
+                    android:textSize="15sp"
+                    android:gravity="bottom|center"
+                    android:textAllCaps="false" />
+
+                <Button
+                    android:id="@+id/btn_webview2"
+                    android:layout_width="match_parent"
+                    android:layout_height="128dp"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginRight="16dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/bg_home_wv"
+                    android:drawableStart="@drawable/home_wv_gjzyy"
+                    android:paddingStart="16dp"
+                    android:text="中医药"
+                    android:textSize="15sp"
+                    android:gravity="bottom|center"
+                    android:textAllCaps="false" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/btn_webview3"
+                    android:layout_width="match_parent"
+                    android:layout_height="128dp"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginRight="8dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/bg_home_wv"
+                    android:drawableStart="@drawable/home_wv_gjjk"
+                    android:paddingStart="16dp"
+                    android:text="国家疾控"
+                    android:textSize="15sp"
+                    android:gravity="bottom|center"
+                    android:textAllCaps="false" />
+
+                <Button
+                    android:id="@+id/btn_webview4"
+                    android:layout_width="match_parent"
+                    android:layout_height="128dp"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginRight="16dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/bg_home_wv"
+                    android:drawableStart="@drawable/home_wv_zhyxh"
+                    android:paddingStart="16dp"
+                    android:text="中华医学会"
+                    android:textSize="15sp"
+                    android:gravity="bottom|center"
+                    android:textAllCaps="false" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/tv_bottomslogan"
+                android:layout_below="@+id/btn_webview8"
+                android:layout_marginTop="64dp"
+                android:layout_width="match_parent"
+                android:layout_height="20dp"
+                android:gravity="center"
+                android:text="我是有底线的哦"
+                android:textSize="15sp"/>
+            <ImageView
+                android:id="@+id/iv_bottombackground"
+                android:layout_width="match_parent"
+                android:layout_height="64dp"
+                android:src="@color/colorTransparent"/>
+
+        </LinearLayout>
+    </ScrollView>
+
+    <LinearLayout
+        android:layout_width="400dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/bg_home_buttonbackground"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btn_health"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/bg_home_button"
+            android:drawableStart="@drawable/home_health_button"
+            android:paddingStart="25dp" />
+
+        <Button
+            android:id="@+id/btn_note"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/bg_home_button"
+            android:drawableStart="@drawable/home_note_button"
+            android:paddingStart="25dp" />
+
+        <Button
+            android:id="@+id/btn_medicine"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/bg_home_button"
+            android:drawableStart="@drawable/home_medicine_button"
+            android:paddingStart="25dp" />
+
+        <Button
+            android:id="@+id/btn_setting"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/bg_home_button"
+            android:drawableStart="@drawable/home_setting_button"
+            android:paddingStart="25dp" />
+
+    </LinearLayout>
+
+</RelativeLayout>

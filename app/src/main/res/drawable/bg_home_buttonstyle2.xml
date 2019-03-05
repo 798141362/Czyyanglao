@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+    <item>
+        <shape>            <!-- 通过pading指定边线有无和宽度 -->
+            <padding
+                android:bottom="8dp" />
+            <solid android:color="@color/colorDarkBlue" />
+            <corners
+                android:bottomLeftRadius="10dp"
+                android:bottomRightRadius="10dp" />
+        </shape>
+    </item>        <!-- 主体 -->
+    <item>
+        <shape>            <!-- 通过pading指定边线有无和宽度 -->
+            <padding
+                android:top="0.5dp" />
+            <solid android:color="@color/colorGrey" />
+
+        </shape>
+    </item>
+    <item>
+        <shape>            <!-- 通过pading指定边线有无和宽度 -->
+            <padding
+                android:right="0.5dp" />
+            <solid android:color="@color/colorGrey" />
+        </shape>
+    </item>
+    <item>
+        <shape>            <!-- 通过pading指定边线有无和宽度 -->
+            <padding
+                android:left="0.5dp" />
+            <solid android:color="@color/colorGrey" />
+        </shape>
+    </item>
+    <item>
+        <shape>
+            <solid android:color="@color/colorWhite" />
+        </shape>
+    </item>
+</layer-list>
+
