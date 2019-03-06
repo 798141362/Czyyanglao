@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.lenovo1.application1">
-
+    <uses-permission android:name="android.permission.CALL_PHONE"/>//用来授权应用可以拨打电话的
+    <uses-permission android:name="android.permission.INTERNET" />//用来授权应用可以webview上网的
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -20,7 +21,14 @@
         <activity android:name=".HealthActivity" />
         <activity android:name=".NoteActivity" />
         <activity android:name=".MedicineActivity" />
-        <activity android:name=".SettingActivity"></activity>
+        <activity android:name=".SettingActivity" />
+        <activity android:name=".LocalActivity" />
+        <activity android:name=".IdActivity" />
+        <activity android:name=".HospitalActivity" />
+        <activity android:name=".Webview1Activity" />
+        <activity android:name=".Webview2Activity" />
+        <activity android:name=".Webview3Activity" />
+        <activity android:name=".Webview4Activity"></activity>
     </application>
 
 </manifest>
