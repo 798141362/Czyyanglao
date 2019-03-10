@@ -11,6 +11,8 @@ import android.view.Window;
 import android.view.WindowManager;
 import android.widget.Button;
 
+import listview.MedicineActivity;
+
 public class HomeActivity extends AppCompatActivity {
     private Button mBtnHealth;
     private Button mBtnNote;
