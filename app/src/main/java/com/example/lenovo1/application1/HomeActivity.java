@@ -11,8 +11,6 @@ import android.view.Window;
 import android.view.WindowManager;
 import android.widget.Button;
 
-import listview.MedicineActivity;
-
 public class HomeActivity extends AppCompatActivity {
     private Button mBtnHealth;
     private Button mBtnNote;
@@ -26,6 +24,7 @@ public class HomeActivity extends AppCompatActivity {
     private Button mBtnWebview2;
     private Button mBtnWebview3;
     private Button mBtnWebview4;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

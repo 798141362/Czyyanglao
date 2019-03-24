@@ -6,7 +6,7 @@ android {
 
     defaultConfig {
         applicationId "com.example.lenovo1.application1"
-        minSdkVersion 21
+        minSdkVersion 16
         targetSdkVersion 25
         versionCode 1
         versionName "1.0"
@@ -21,10 +21,37 @@ android {
 
 }
 
+//allprojects {
+    //repositories {
+        //jcenter()
+        //maven {
+            //url 'http://maven.aliyun.com/nexus/content/repositories/releases/'
+       // }
+    //}
+//}
+
+repositories {
+    flatDir {
+        dirs 'libs'
+    }
+}
+
 dependencies {
     compile fileTree(include: ['*.jar'], dir: 'libs')
     testCompile 'junit:junit:4.12'
     compile 'com.android.support:appcompat-v7:25.3.1'
+    //阿里百川Maven依赖
+    //compile 'com.aliyun.ams:alicloud-android-feedback:3.1.8'
+   // compile 'com.aliyun.ams:alicloud-android-utdid:1.1.5.3'
+    //compile 'com.aliyun.ams:alicloud-android-ut:5.4.0'
+   // compile 'com.aliyun.ams:alicloud-android-utils:1.1.3'
+//高德地图的sdk
     compile files('libs/AMap_Location_V4.5.0_20190121.jar')
     compile files('libs/Amap_2DMap_V5.2.0_20170627.jar')
+//阿里用户反馈的sdk
+    //compile(name: 'alicloud-android-feedback-3.2.0', ext: 'aar')
+    //compile files('libs/alicloud-android-ut-5.4.0.jar')
+    //compile files('libs/utdid4all-1.1.5.3_proguard.jar')
+    //compile files('libs/alicloud-android-utils-1.1.3.jar')
+    //compile files('libs/alicloud-android-beacon-1.0.1.jar')
 }
