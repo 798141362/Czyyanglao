@@ -42,16 +42,19 @@ dependencies {
     compile 'com.android.support:appcompat-v7:25.3.1'
     //阿里百川Maven依赖
     //compile 'com.aliyun.ams:alicloud-android-feedback:3.1.8'
-   // compile 'com.aliyun.ams:alicloud-android-utdid:1.1.5.3'
+    // compile 'com.aliyun.ams:alicloud-android-utdid:1.1.5.3'
     //compile 'com.aliyun.ams:alicloud-android-ut:5.4.0'
-   // compile 'com.aliyun.ams:alicloud-android-utils:1.1.3'
-//高德地图的sdk
+    // compile 'com.aliyun.ams:alicloud-android-utils:1.1.3'
+    //高德地图的sdk
     compile files('libs/AMap_Location_V4.5.0_20190121.jar')
     compile files('libs/Amap_2DMap_V5.2.0_20170627.jar')
-//阿里用户反馈的sdk
+    //阿里用户反馈的sdk
     //compile(name: 'alicloud-android-feedback-3.2.0', ext: 'aar')
     //compile files('libs/alicloud-android-ut-5.4.0.jar')
     //compile files('libs/utdid4all-1.1.5.3_proguard.jar')
     //compile files('libs/alicloud-android-utils-1.1.3.jar')
     //compile files('libs/alicloud-android-beacon-1.0.1.jar')
+    compile 'com.android.support:support-v13:25.3.1'
+    compile 'com.android.support:design:25.3.1'
+    compile 'com.android.support:support-v4:25.3.1'
 }

@@ -78,7 +78,7 @@
         <activity android:name=".Webview3Activity" />
         <activity android:name=".Webview4Activity" />
         <activity android:name=".ItemActivity" />
-        <activity android:name=".MedicineActivity" />
+        <activity android:name=".ToolActivity" />
         <activity android:name=".AppActivity" />
         <activity android:name=".AgreementActivity" />
         <activity android:name=".FeedbackActivity" />
@@ -87,6 +87,7 @@
         <activity android:name=".SafetyActivity" />
         <activity android:name=".HelpActivity" />
         <activity android:name=".CommonActivity" />
+        <activity android:name=".AddRecordActivity" />
     </application>
 
 </manifest>

@@ -34,8 +34,8 @@
                     android:layout_marginRight="8dp"
                     android:layout_marginTop="10dp"
                     android:layout_weight="1"
-                    android:drawableStart="@drawable/home_local"
-                    android:paddingStart="16dp"
+                    android:drawableLeft="@drawable/home_local"
+                    android:paddingLeft="16dp"
                     android:background="@drawable/bg_home_buttonstyle"
                     android:text="我的位置"
                     android:textSize="15sp"
@@ -49,10 +49,10 @@
                     android:layout_marginRight="16dp"
                     android:layout_marginTop="10dp"
                     android:layout_weight="1"
-                    android:drawableStart="@drawable/home_id"
-                    android:paddingStart="16dp"
+                    android:drawableLeft="@drawable/home_id"
+                    android:paddingLeft="16dp"
                     android:background="@drawable/bg_home_buttonstyle2"
-                    android:text="身份信息"
+                    android:text="老人信息"
                     android:textSize="15sp"
                     android:textAllCaps="false" />
             </LinearLayout>
@@ -70,8 +70,8 @@
                     android:layout_marginRight="8dp"
                     android:layout_marginTop="10dp"
                     android:layout_weight="1"
-                    android:drawableStart="@drawable/home_cellphone"
-                    android:paddingStart="16dp"
+                    android:drawableLeft="@drawable/home_cellphone"
+                    android:paddingLeft="16dp"
                     android:background="@drawable/bg_home_buttonstyle3"
                     android:text="一键呼叫"
                     android:textSize="15sp"
@@ -85,8 +85,8 @@
                     android:layout_marginRight="16dp"
                     android:layout_marginTop="10dp"
                     android:layout_weight="1"
-                    android:drawableStart="@drawable/home_hospital"
-                    android:paddingStart="16dp"
+                    android:drawableLeft="@drawable/home_hospital"
+                    android:paddingLeft="16dp"
                     android:background="@drawable/bg_home_buttonstyle4"
                     android:text="医院简介"
                     android:textSize="15sp"
@@ -119,8 +119,8 @@
                     android:layout_marginRight="8dp"
                     android:layout_weight="1"
                     android:background="@drawable/bg_home_wv"
-                    android:drawableStart="@drawable/home_wv_gxykd"
-                    android:paddingStart="16dp"
+                    android:drawableLeft="@drawable/home_wv_gxykd"
+                    android:paddingLeft="16dp"
                     android:text="广西医科大"
                     android:textSize="15sp"
                     android:gravity="bottom|center"
@@ -134,8 +134,8 @@
                     android:layout_marginRight="16dp"
                     android:layout_weight="1"
                     android:background="@drawable/bg_home_wv"
-                    android:drawableStart="@drawable/home_wv_gjzyy"
-                    android:paddingStart="16dp"
+                    android:drawableLeft="@drawable/home_wv_gjzyy"
+                    android:paddingLeft="16dp"
                     android:text="中医药"
                     android:textSize="15sp"
                     android:gravity="bottom|center"
@@ -156,8 +156,8 @@
                     android:layout_marginTop="10dp"
                     android:layout_weight="1"
                     android:background="@drawable/bg_home_wv"
-                    android:drawableStart="@drawable/home_wv_gjjk"
-                    android:paddingStart="16dp"
+                    android:drawableLeft="@drawable/home_wv_gjjk"
+                    android:paddingLeft="16dp"
                     android:text="国家疾控"
                     android:textSize="15sp"
                     android:gravity="bottom|center"
@@ -172,8 +172,8 @@
                     android:layout_marginTop="10dp"
                     android:layout_weight="1"
                     android:background="@drawable/bg_home_wv"
-                    android:drawableStart="@drawable/home_wv_zhyxh"
-                    android:paddingStart="16dp"
+                    android:drawableLeft="@drawable/home_wv_zhyxh"
+                    android:paddingLeft="16dp"
                     android:text="中华医学会"
                     android:textSize="15sp"
                     android:gravity="bottom|center"
@@ -211,8 +211,8 @@
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:background="@drawable/bg_home_button"
-            android:drawableStart="@drawable/home_health_button"
-            android:paddingStart="25dp" />
+            android:drawableLeft="@drawable/home_health_button"
+            android:paddingLeft="25dp" />
 
         <Button
             android:id="@+id/btn_note"
@@ -220,17 +220,17 @@
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:background="@drawable/bg_home_button"
-            android:drawableStart="@drawable/home_note_button"
-            android:paddingStart="25dp" />
+            android:drawableLeft="@drawable/home_note_button"
+            android:paddingLeft="25dp" />
 
         <Button
-            android:id="@+id/btn_medicine"
+            android:id="@+id/btn_tool"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:background="@drawable/bg_home_button"
-            android:drawableStart="@drawable/home_medicine_button"
-            android:paddingStart="25dp" />
+            android:drawableLeft="@drawable/home_medicine_button"
+            android:paddingLeft="25dp" />
 
         <Button
             android:id="@+id/btn_setting"
@@ -238,8 +238,8 @@
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:background="@drawable/bg_home_button"
-            android:drawableStart="@drawable/home_setting_button"
-            android:paddingStart="25dp" />
+            android:drawableLeft="@drawable/home_setting_button"
+            android:paddingLeft="25dp" />
 
     </LinearLayout>
 

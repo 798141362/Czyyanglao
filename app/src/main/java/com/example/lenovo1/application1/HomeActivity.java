@@ -14,7 +14,7 @@ import android.widget.Button;
 public class HomeActivity extends AppCompatActivity {
     private Button mBtnHealth;
     private Button mBtnNote;
-    private Button mBtnMedicine;
+    private Button mBtnTool;
     private Button mBtnSetting;
     private Button mBtnLocal;
     private Button mBtnId;
@@ -42,7 +42,7 @@ public class HomeActivity extends AppCompatActivity {
         setContentView(R.layout.activity_home);
         mBtnHealth = (Button) findViewById(R.id.btn_health);
         mBtnNote = (Button) findViewById(R.id.btn_note);
-        mBtnMedicine = (Button) findViewById(R.id.btn_medicine);
+        mBtnTool = (Button) findViewById(R.id.btn_tool);
         mBtnSetting = (Button) findViewById(R.id.btn_setting);
         mBtnLocal = (Button) findViewById(R.id.btn_local);
         mBtnId = (Button) findViewById(R.id.btn_id);
@@ -67,7 +67,7 @@ public class HomeActivity extends AppCompatActivity {
         OnClick onClicklik = new OnClick();
         mBtnHealth.setOnClickListener(onClicklik);
         mBtnNote.setOnClickListener(onClicklik);
-        mBtnMedicine.setOnClickListener(onClicklik);
+        mBtnTool.setOnClickListener(onClicklik);
         mBtnSetting.setOnClickListener(onClicklik);
         mBtnLocal.setOnClickListener(onClicklik);
         mBtnId.setOnClickListener(onClicklik);
@@ -98,8 +98,8 @@ public class HomeActivity extends AppCompatActivity {
                 case R.id.btn_note:
                     intent = new Intent(HomeActivity.this, NoteActivity.class);
                     break;
-                case R.id.btn_medicine:
-                    intent = new Intent(HomeActivity.this, MedicineActivity.class);
+                case R.id.btn_tool:
+                    intent = new Intent(HomeActivity.this, ToolActivity.class);
                     break;
                 case R.id.btn_setting:
                     intent = new Intent(HomeActivity.this, SettingActivity.class);

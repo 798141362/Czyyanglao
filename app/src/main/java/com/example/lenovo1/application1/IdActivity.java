@@ -15,59 +15,60 @@ import android.widget.TextView;
 
 public class IdActivity extends AppCompatActivity {
 
-    private SharedPreferences mSharedPreferences;
-    private SharedPreferences.Editor mEditor;
+    //private SharedPreferences mSharedPreferences;这两个是shared Preferences数据库的
+    //private SharedPreferences.Editor mEditor;
 
-    private EditText mEtUserName,mEtUserId,mEtUserPhone,mEtUserAddress;
-    private TextView mTvUserName,mTvUserId,mTvUserPhone,mTvUserAddress;
+    private EditText mEtName,mEtIdcard,mEtElderTel,mEtMarriage,mEtNation,mEtBorndate,mEtEldertype ,mEtElderage,mEtElderlive,mEtSecurity,mEtChronic,mEtBtype,mEtElderagency;
+    private TextView mTvName,mTvIdcard,mTvElderTel,mTvMarriage,mTvNation,mTvBorndate,mTvEldertype ,mTvElderage ,mTvElderlive ,mTvSecurity,mTvChronic,mTvBtype,mTvElderagency;
     private Button mBtnSave,mBtnShow;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP) {
             Window window = getWindow();
-            window.clearFlags(WindowManager.LayoutParams.FLAG_TRANSLUCENT_STATUS | WindowManager.LayoutParams.FLAG_TRANSLUCENT_NAVIGATION);
-            window.getDecorView().setSystemUiVisibility(View.SYSTEM_UI_FLAG_LAYOUT_FULLSCREEN | View.SYSTEM_UI_FLAG_LAYOUT_HIDE_NAVIGATION | View.SYSTEM_UI_FLAG_LAYOUT_STABLE);
+            window.clearFlags(WindowManager.LayoutParams.FLAG_TRANSLUCENT_STATUS);
+            window.getDecorView().setSystemUiVisibility(View.SYSTEM_UI_FLAG_LAYOUT_FULLSCREEN | View.SYSTEM_UI_FLAG_LAYOUT_STABLE);
             window.addFlags(WindowManager.LayoutParams.FLAG_DRAWS_SYSTEM_BAR_BACKGROUNDS);
             window.setStatusBarColor(Color.TRANSPARENT);
-            window.setNavigationBarColor(Color.TRANSPARENT);
-
         }
         setContentView(R.layout.activity_id);
 
-        mEtUserName = (EditText) findViewById(R.id.et_username);
-        mEtUserId = (EditText) findViewById(R.id.et_userid);
-        mEtUserPhone = (EditText) findViewById(R.id.et_userphone);
-        mEtUserAddress = (EditText) findViewById(R.id.et_useraddress);
-        mTvUserName = (TextView) findViewById(R.id.tv_username);
-        mTvUserId = (TextView) findViewById(R.id.tv_userid);
-        mTvUserPhone = (TextView) findViewById(R.id.tv_userphone);
-        mTvUserAddress = (TextView) findViewById(R.id.tv_useraddress);
-        mBtnSave = (Button) findViewById(R.id.btn_save);
-        mBtnShow = (Button) findViewById(R.id.btn_show);
+      mEtName = (EditText) findViewById(R.id.et_name);
+        mTvName = (TextView) findViewById(R.id.tv_name);
+        mEtIdcard = (EditText) findViewById(R.id.et_idcard);
+        mTvIdcard = (TextView) findViewById(R.id.tv_idcard);
+       mEtElderTel = (EditText) findViewById(R.id.et_eldertel);
+        mTvElderTel = (TextView) findViewById(R.id.tv_eldertel);
+       mEtMarriage = (EditText) findViewById(R.id.et_marriage);
+        mTvMarriage = (TextView) findViewById(R.id.tv_marriage);
 
-        mSharedPreferences = getSharedPreferences("data",MODE_PRIVATE); //data是文件名称
-        mEditor = mSharedPreferences.edit();
 
-        mBtnSave.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                mEditor.putString("username",mEtUserName.getText().toString());//cun
-                mEditor.putString("userid",mEtUserId.getText().toString());
-                mEditor.putString("userphone",mEtUserPhone.getText().toString());
-                mEditor.putString("useraddress",mEtUserAddress.getText().toString());
-                mEditor.apply();//tijiao commit同步储存 apply是异步先变再存储到手机内存
+        mEtNation = (EditText) findViewById(R.id.et_nation);
+        mTvNation = (TextView) findViewById(R.id.tv_nation);
+        mEtBorndate = (EditText) findViewById(R.id.et_borndate);
+        mTvBorndate= (TextView) findViewById(R.id.tv_borndate);
+        mEtEldertype = (EditText) findViewById(R.id.et_eldertype);
+        mTvEldertype = (TextView) findViewById(R.id.tv_eldertype);
+        mEtElderage = (EditText) findViewById(R.id.et_elderage);
+        mTvElderage = (TextView) findViewById(R.id.tv_elderage);
 
-            }
-        });
-        mBtnShow.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                mTvUserName.setText(mSharedPreferences.getString("username",""));//du
-                mTvUserId.setText(mSharedPreferences.getString("userid",""));
-                mTvUserPhone.setText(mSharedPreferences.getString("userphone",""));
-                mTvUserAddress.setText(mSharedPreferences.getString("useraddress",""));
-            }
-        });
+        mEtElderlive = (EditText) findViewById(R.id.et_elderlive);
+        mTvElderlive = (TextView) findViewById(R.id.tv_elderlive);
+        mEtElderagency = (EditText) findViewById(R.id.et_elderagency);
+        mTvElderagency= (TextView) findViewById(R.id.tv_elderagency);
+        mEtSecurity = (EditText) findViewById(R.id.et_security);
+        mTvSecurity = (TextView) findViewById(R.id.tv_security);
+        mEtChronic = (EditText) findViewById(R.id.et_chronic);
+        mTvChronic= (TextView) findViewById(R.id.tv_chronic);
+        mEtBtype = (EditText) findViewById(R.id.et_btype);
+        mTvBtype = (TextView) findViewById(R.id.tv_btype);
+
+
+
+
+       mBtnSave = (Button) findViewById(R.id.btn_save);
+       mBtnShow = (Button) findViewById(R.id.btn_show);
+
+
     }
 }
