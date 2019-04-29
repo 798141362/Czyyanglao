@@ -4,5 +4,55 @@
     android:layout_height="match_parent">
 
 
+    <ImageView
+        android:id="@+id/iv_hospital"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:background="@drawable/hospital_topbackground"/>
 
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_below="@+id/iv_hospital">
+
+        <Button
+            android:id="@+id/btn_gxuyy"
+            android:layout_width="match_parent"
+            android:layout_height="128dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginTop="10dp"
+            android:layout_weight="1"
+            android:drawableLeft="@drawable/hospital_logo"
+            android:paddingLeft="16dp"
+            android:background="@drawable/bg_home_buttonstyle"
+            android:text="广西大学校医院"
+            android:textSize="15sp"
+            android:textAllCaps="false" />
+
+        <Button
+            android:id="@+id/btn_bhrmyy"
+            android:layout_width="match_parent"
+            android:layout_height="128dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginTop="10dp"
+            android:layout_weight="1"
+            android:drawableLeft="@drawable/hospital_logo"
+            android:paddingLeft="16dp"
+            android:background="@drawable/bg_home_buttonstyle2"
+            android:text="北海市人民医院"
+            android:textSize="15sp"
+            android:textAllCaps="false" />
+        <TextView
+            android:id="@+id/tv_bottomslogan"
+            android:layout_below="@+id/btn_webview8"
+            android:layout_marginTop="64dp"
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            android:gravity="center"
+            android:text="更多医院详情尽请期待"
+            android:textSize="15sp"/>
+ </LinearLayout>
 </RelativeLayout>

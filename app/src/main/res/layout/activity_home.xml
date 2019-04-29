@@ -52,7 +52,7 @@
                     android:drawableLeft="@drawable/home_id"
                     android:paddingLeft="16dp"
                     android:background="@drawable/bg_home_buttonstyle2"
-                    android:text="老人信息"
+                    android:text="身份信息"
                     android:textSize="15sp"
                     android:textAllCaps="false" />
             </LinearLayout>

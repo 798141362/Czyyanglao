@@ -109,6 +109,26 @@
                 android:maxLines="1"
                 android:textSize="16sp" />
 
+            <TextView
+                android:id="@+id/tv_sex"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:drawableLeft="@drawable/id_xingbie"
+                android:drawablePadding="8dp"
+                android:text="***"
+                android:textColor="@color/colorDrake"
+                android:textSize="20sp" />
+            <EditText
+                android:id="@+id/et_sex"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:background="@null"
+                android:hint="请输入性别"
+                android:maxLines="1"
+                android:textSize="16sp" />
 
             <TextView
                 android:id="@+id/tv_eldertel"
@@ -127,33 +147,10 @@
                 android:layout_marginLeft="16dp"
                 android:layout_marginRight="16dp"
                 android:background="@null"
-                android:hint="请输入子女电话"
+                android:hint="请输入电话"
                 android:inputType="number"
                 android:maxLines="1"
                 android:textSize="16sp" />
-
-
-            <TextView
-                android:id="@+id/tv_marriage"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="16dp"
-                android:drawableLeft="@drawable/id_hunyin"
-                android:drawablePadding="8dp"
-                android:text="***"
-                android:textColor="@color/colorDrake"
-                android:textSize="20sp" />
-            <EditText
-                android:id="@+id/et_marriage"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="16dp"
-                android:layout_marginRight="16dp"
-                android:background="@null"
-                android:hint="请输入婚姻状态"
-                android:maxLines="1"
-                android:textSize="16sp" />
-
 
             <TextView
                 android:id="@+id/tv_nation"
@@ -238,7 +235,7 @@
                 android:layout_marginLeft="16dp"
                 android:layout_marginRight="16dp"
                 android:background="@null"
-                android:hint="请输入年龄大小"
+                android:hint="请输入年龄"
                 android:maxLines="1"
                 android:textSize="16sp" />
 
@@ -286,9 +283,8 @@
                 android:maxLines="1"
                 android:textSize="16sp" />
 
-
             <TextView
-                android:id="@+id/tv_security"
+                android:id="@+id/tv_emercontact"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="16dp"
@@ -298,19 +294,41 @@
                 android:textColor="@color/colorDrake"
                 android:textSize="20sp" />
             <EditText
-                android:id="@+id/et_security"
+                android:id="@+id/et_emercontact"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="16dp"
                 android:layout_marginRight="16dp"
                 android:background="@null"
-                android:hint="请输入所有的医保类型"
+                android:hint="请输入紧急联系人"
                 android:maxLines="1"
                 android:textSize="16sp" />
 
 
             <TextView
-                android:id="@+id/tv_chronic"
+                android:id="@+id/tv_emertel"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:drawableLeft="@drawable/id_yibaoleixing"
+                android:drawablePadding="8dp"
+                android:text="***"
+                android:textColor="@color/colorDrake"
+                android:textSize="20sp" />
+            <EditText
+                android:id="@+id/et_emertel"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:background="@null"
+                android:hint="请输入联系人电话"
+                android:maxLines="1"
+                android:textSize="16sp" />
+
+
+            <TextView
+                android:id="@+id/tv_servicetype"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="16dp"
@@ -320,19 +338,19 @@
                 android:textColor="@color/colorDrake"
                 android:textSize="20sp" />
             <EditText
-                android:id="@+id/et_chronic"
+                android:id="@+id/et_servicetype"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="16dp"
                 android:layout_marginRight="16dp"
                 android:background="@null"
-                android:hint="请输入患有的老年疾病"
+                android:hint="请输入养老类型"
                 android:maxLines="1"
                 android:textSize="16sp" />
 
 
             <TextView
-                android:id="@+id/tv_btype"
+                android:id="@+id/tv_servicestate"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="16dp"
@@ -342,13 +360,13 @@
                 android:textColor="@color/colorDrake"
                 android:textSize="20sp" />
             <EditText
-                android:id="@+id/et_btype"
+                android:id="@+id/et_servicestate"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="16dp"
                 android:layout_marginRight="16dp"
                 android:background="@null"
-                android:hint="请输入血型"
+                android:hint="请输入养老服务状态"
                 android:maxLines="1"
                 android:textSize="16sp" />
 

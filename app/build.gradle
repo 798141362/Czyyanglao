@@ -3,6 +3,7 @@ apply plugin: 'com.android.application'
 android {
     compileSdkVersion 25
     buildToolsVersion "21.1.2"
+    useLibrary 'org.apache.http.legacy'
 
     defaultConfig {
         applicationId "com.example.lenovo1.application1"
@@ -20,6 +21,12 @@ android {
     }
 
 }
+repositories {
+    maven {
+        mavenCentral()
+        url'https://repo1.maven.org/maven2/'
+    }
+}
 
 //allprojects {
     //repositories {
@@ -35,6 +42,26 @@ repositories {
         dirs 'libs'
     }
 }
+
+buildscript {
+    repositories {
+        jcenter()
+    }
+    dependencies {
+        classpath 'com.android.tools.build:gradle:1.3.0'
+
+        // NOTE: Do not place your application dependencies here; they belong
+        // in the individual module build.gradle files
+    }
+}
+
+
+
+
+
+
+
+
 
 dependencies {
     compile fileTree(include: ['*.jar'], dir: 'libs')
@@ -57,4 +84,8 @@ dependencies {
     compile 'com.android.support:support-v13:25.3.1'
     compile 'com.android.support:design:25.3.1'
     compile 'com.android.support:support-v4:25.3.1'
+    compile files('libs/android-async-http-1.4.8.jar')
+    compile 'cz.msebera.android:httpclient:4.3.6'
+    compile 'org.apache.httpcomponents:httpcore:4.4.2'
+    compile files('libs/httpclient-4.3.6.jar')
 }

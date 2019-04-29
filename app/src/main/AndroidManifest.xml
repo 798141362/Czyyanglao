@@ -88,6 +88,10 @@
         <activity android:name=".HelpActivity" />
         <activity android:name=".CommonActivity" />
         <activity android:name=".AddRecordActivity" />
+        <activity android:name=".GxuYYActivity" />
+        <activity android:name=".BhrmYYActivity" />
+        <activity android:name=".MedicalRecordActivity" />
+        <activity android:name=".SplashActivity"></activity>
     </application>
 
 </manifest>
