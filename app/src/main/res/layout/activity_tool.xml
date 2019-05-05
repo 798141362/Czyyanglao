@@ -21,19 +21,32 @@
             android:layout_width="match_parent"
             android:layout_height="128dp"
             android:layout_marginLeft="16dp"
-            android:layout_marginRight="8dp"
+            android:layout_marginRight="16dp"
             android:layout_marginTop="10dp"
-            android:layout_weight="1"
+
             android:drawableLeft="@drawable/hospital_logo"
             android:paddingLeft="16dp"
             android:background="@drawable/bg_home_buttonstyle3"
             android:text="智能电子病历"
             android:textSize="15sp"
             android:textAllCaps="false" />
+        <Button
+            android:id="@+id/btn_sczl"
+            android:layout_width="match_parent"
+            android:layout_height="128dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginTop="10dp"
+            android:drawableLeft="@drawable/tool_ziliao"
+            android:paddingLeft="16dp"
+            android:background="@drawable/bg_home_buttonstyle3"
+            android:text="上传老人资料"
+            android:textSize="15sp"
+            android:textAllCaps="false" />
 
         <TextView
             android:id="@+id/tv_bottomslogan"
-            android:layout_marginTop="200dp"
+            android:layout_marginTop="60dp"
             android:layout_width="match_parent"
             android:layout_height="20dp"
             android:gravity="center"

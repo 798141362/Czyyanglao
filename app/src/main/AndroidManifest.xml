@@ -58,20 +58,23 @@
 
         <service android:name="com.amap.api.location.APSService" />
 
-        <activity android:name=".LoginActivity">
+        <activity
+            android:name=".SplashActivity"
+            android:theme="@style/NoTitleFullscreen">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity android:name=".LoginActivity" />
         <activity android:name=".HomeActivity" />
         <activity android:name=".RegisterActivity" />
         <activity android:name=".HealthActivity" />
         <activity android:name=".NoteActivity" />
         <activity android:name=".SettingActivity" />
         <activity android:name=".LocalActivity" />
-        <activity android:name=".IdActivity" />
+        <activity android:name=".PostIdActivity" />
         <activity android:name=".HospitalActivity" />
         <activity android:name=".Webview1Activity" />
         <activity android:name=".Webview2Activity" />
@@ -91,7 +94,7 @@
         <activity android:name=".GxuYYActivity" />
         <activity android:name=".BhrmYYActivity" />
         <activity android:name=".MedicalRecordActivity" />
-        <activity android:name=".SplashActivity"></activity>
+        <activity android:name=".IdActivity" />
     </application>
 
 </manifest>

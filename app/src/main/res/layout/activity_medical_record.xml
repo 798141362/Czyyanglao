@@ -5,6 +5,84 @@
     android:layout_height="match_parent"
     tools:context="com.example.lenovo1.application1.MedicalRecordActivity">
 
+    <ImageView
+        android:id="@+id/iv_hospital"
+        android:layout_width="match_parent"
+        android:layout_height="164dp"
+        android:background="@drawable/tool_topbackground"/>
+    <TextView
+        android:id="@+id/tv1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="8dp"
+        android:text="电子病历"
+        android:textColor="@color/colorWhite"
+        android:textSize="48sp" />
+
+    <TextView
+        android:id="@+id/tv2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv1"
+        android:layout_marginLeft="16dp"
+        android:text="个人就诊情况"
+        android:textColor="@color/colorGrey"
+        android:textSize="16sp" />
+    <Button
+        android:id="@+id/btn_save"
+        android:layout_alignParentRight="true"
+        android:layout_width="120dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="120dp"
+        android:layout_marginRight="16dp"
+        android:text="保存病历"
+        android:textColor="@color/colorGreen"
+        android:textSize="24sp"
+        android:background="@drawable/bg_home_button" />
+    <Button
+        android:id="@+id/btn_show"
+        android:layout_alignParentLeft="true"
+        android:layout_width="120dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="120dp"
+        android:layout_marginLeft="16dp"
+        android:text="查看病历"
+        android:textColor="@color/colorWhite"
+        android:textSize="24sp"
+        android:background="@drawable/bg_home_button" />
+    <TextView
+        android:id="@+id/tv_blnr"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:gravity="center"
+        android:text="-病历内容-"
+        android:textSize="20sp"
+        android:textColor="@color/colorDarkRed"
+        android:layout_below="@+id/iv_hospital"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_below="@+id/tv_blnr">
+    <Button
+        android:id="@+id/btn_add"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:drawableBottom="@drawable/medical_record_add"
+        android:background="@drawable/bg_id_shape_corners"/>
+
+     <include layout="@layout/fragment_medical_record"/>
+
+    </LinearLayout>
+
+
+
+
+
+
 
 
 </RelativeLayout>

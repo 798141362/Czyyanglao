@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AddMedicalRecordActivity">
+    <ImageView
+        android:id="@+id/iv_medical"
+        android:layout_width="match_parent"
+        android:layout_height="164dp"
+        android:background="@color/colorDarkBlue"/>
+    <TextView
+        android:id="@+id/tv_blnr"
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/iv_medical"
+        android:layout_marginLeft="16dp"
+        android:text="新增病历内容"
+        android:textSize="40sp"
+        android:textColor="@color/colorWhite" />
+
+
+    <EditText
+        android:id="@+id/et_hospital"
+        android:layout_below="@+id/iv_medical"
+        android:textColor="@color/colorDrake"
+        android:hint="就诊医院"
+        android:textColorHint="@color/colorRed"
+        android:paddingLeft="10dp"
+        android:textSize="24sp"
+        android:layout_margin="8dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:background="@drawable/bg_health_edittext"
+        android:layout_width="match_parent"
+        android:layout_height="50dp" />
+        <EditText
+            android:id="@+id/et_offices"
+            android:layout_below="@+id/et_hospital"
+            android:textColor="@color/colorDrake"
+            android:hint="就诊科室"
+            android:textColorHint="@color/colorYellow"
+            android:paddingLeft="10dp"
+            android:textSize="24sp"
+            android:layout_margin="8dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:background="@drawable/bg_health_edittext"
+            android:layout_width="match_parent"
+            android:layout_height="50dp" />
+    <EditText
+        android:id="@+id/et_medicalDay"
+        android:layout_below="@+id/et_offices"
+        android:textColor="@color/colorDrake"
+        android:textColorHint="@color/colorDarkBlue"
+        android:hint="就诊时间"
+        android:paddingLeft="10dp"
+        android:textSize="24sp"
+        android:layout_margin="8dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:background="@drawable/bg_health_edittext"
+        android:layout_width="match_parent"
+        android:layout_height="50dp" />
+    <EditText
+        android:id="@+id/et_symptom"
+        android:layout_below="@+id/et_medicalDay"
+        android:hint="症状"
+        android:textColorHint="@color/colorDrakeGreen"
+        android:textColor="@color/colorDrake"
+        android:paddingLeft="10dp"
+        android:textSize="30sp"
+        android:layout_margin="8dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:background="@drawable/bg_health_edittext"
+        android:layout_width="match_parent"
+        android:layout_height="70dp" />
+
+
+
+        <Button
+            android:id="@+id/btn_done"
+            android:layout_below="@+id/et_symptom"
+            android:drawableLeft="@drawable/health_tianjiajilu"
+            android:background="@drawable/bg_health_edittext"
+            android:paddingLeft="12dp"
+            android:layout_width="64dp"
+            android:layout_margin="16dp"
+            android:layout_height="64dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp" />
+
+
+</RelativeLayout>

@@ -55,32 +55,13 @@
             android:paddingRight="16dp"/>
     </LinearLayout>
 
+
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="144dp"
+        android:layout_height="wrap_content"
         android:layout_marginTop="12dp"
         android:orientation="vertical"
         android:background="@color/colorWhite">
-        <Button
-            android:id="@+id/btn_account"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:background="@color/colorTransparent"
-            android:text="账号绑定"
-            android:textAlignment="textStart"
-            android:paddingLeft="16dp"
-            android:drawableRight="@drawable/setting_in2"
-            android:paddingRight="16dp"/>
-        <Button
-            android:id="@+id/btn_data"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:background="@color/colorTransparent"
-            android:text="修改资料"
-            android:textAlignment="textStart"
-            android:paddingLeft="16dp"
-            android:drawableRight="@drawable/setting_in2"
-            android:paddingRight="16dp"/>
         <Button
             android:id="@+id/btn_safety"
             android:layout_width="match_parent"
@@ -91,14 +72,6 @@
             android:paddingLeft="16dp"
             android:drawableRight="@drawable/setting_in2"
             android:paddingRight="16dp"/>
-    </LinearLayout>
-
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="144dp"
-        android:layout_marginTop="12dp"
-        android:orientation="vertical"
-        android:background="@color/colorWhite">
         <Button
             android:id="@+id/btn_cache"
             android:layout_width="match_parent"
@@ -109,16 +82,7 @@
             android:paddingLeft="16dp"
             android:drawableRight="@drawable/setting_in2"
             android:paddingRight="16dp"/>
-        <Button
-            android:id="@+id/btn_help"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:background="@color/colorTransparent"
-            android:text="帮助"
-            android:textAlignment="textStart"
-            android:paddingLeft="16dp"
-            android:drawableRight="@drawable/setting_in2"
-            android:paddingRight="16dp"/>
+
         <Button
             android:id="@+id/btn_common"
             android:layout_width="match_parent"
@@ -133,8 +97,8 @@
     <Button
         android:id="@+id/btn_quit"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_marginTop="16dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="150dp"
         android:layout_marginLeft="16dp"
         android:layout_marginRight="16dp"
         android:layout_marginBottom="16dp"

@@ -15,12 +15,9 @@ import android.widget.Toast;
 public class SettingActivity extends AppCompatActivity {
     private Button mBtnApp;
     private Button mBtnAgreement;
-    private Button mBtnSuggestion;
-    private Button mBtnAccount;
-    private Button mBtnData;
+    private Button mBtnSuggestion;;
     private Button mBtnSafety;
     private Button mBtnCache;
-    private Button mBtnHelp;
     private Button mBtnCommon;
 
     @Override
@@ -31,11 +28,8 @@ public class SettingActivity extends AppCompatActivity {
         mBtnApp = (Button) findViewById(R.id.btn_app);
         mBtnAgreement = (Button) findViewById(R.id.btn_agreement);
         mBtnSuggestion = (Button) findViewById(R.id.btn_suggestion);
-        mBtnAccount = (Button) findViewById(R.id.btn_account);
-        mBtnData = (Button) findViewById(R.id.btn_data);
         mBtnSafety = (Button) findViewById(R.id.btn_safety);
 
-        mBtnHelp = (Button) findViewById(R.id.btn_help);
         mBtnCommon = (Button) findViewById(R.id.btn_common);
         setListeners();
 
@@ -69,11 +63,8 @@ public class SettingActivity extends AppCompatActivity {
         mBtnApp.setOnClickListener(onClicklik);
         mBtnAgreement.setOnClickListener(onClicklik);
         mBtnSuggestion.setOnClickListener(onClicklik);
-        mBtnAccount.setOnClickListener(onClicklik);
-        mBtnData.setOnClickListener(onClicklik);
         mBtnSafety.setOnClickListener(onClicklik);
 
-        mBtnHelp.setOnClickListener(onClicklik);
         mBtnCommon.setOnClickListener(onClicklik);
 
     }
@@ -94,17 +85,8 @@ public class SettingActivity extends AppCompatActivity {
                 case R.id.btn_suggestion:
                     intent = new Intent(SettingActivity.this, FeedbackActivity.class);
                     break;
-                case R.id.btn_account:
-                    intent = new Intent(SettingActivity.this, AccountActivity.class);
-                    break;
-                case R.id.btn_data:
-                    intent = new Intent(SettingActivity.this, DataActivity.class);
-                    break;
                 case R.id.btn_safety:
                     intent = new Intent(SettingActivity.this, SafetyActivity.class);
-                    break;
-                case R.id.btn_help:
-                    intent = new Intent(SettingActivity.this, HelpActivity.class);
                     break;
                 case R.id.btn_common:
                     intent = new Intent(SettingActivity.this, CommonActivity.class);

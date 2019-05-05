@@ -27,43 +27,39 @@
         android:layout_height="wrap_content"
         android:layout_below="@+id/tv1"
         android:layout_marginLeft="16dp"
-        android:text="老人资料"
+        android:text="老人紧急资料"
         android:textColor="@color/colorGrey"
         android:textSize="16sp" />
     <Button
         android:id="@+id/btn_save"
         android:layout_alignParentRight="true"
-        android:layout_width="64dp"
+        android:layout_width="120dp"
         android:layout_height="40dp"
         android:layout_marginTop="120dp"
         android:layout_marginRight="16dp"
-        android:text="保存"
+        android:text="保存信息"
         android:textColor="@color/colorGreen"
         android:textSize="24sp"
         android:background="@drawable/bg_home_button" />
     <Button
         android:id="@+id/btn_show"
         android:layout_alignParentLeft="true"
-        android:layout_width="64dp"
+        android:layout_width="120dp"
         android:layout_height="40dp"
         android:layout_marginTop="120dp"
         android:layout_marginLeft="16dp"
-        android:text="查看"
+        android:text="查看信息"
         android:textColor="@color/colorDrake"
         android:textSize="24sp"
         android:background="@drawable/bg_home_button" />
-    <ScrollView
-        android:id="@+id/id_ScrollView"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_below="@+id/id_top"
-        android:scrollbars="none">
+
 
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="vertical">
+            android:orientation="vertical"
+            android:layout_below="@+id/id_top">
 
 
             <TextView
@@ -93,6 +89,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="16dp"
+                android:layout_marginTop="8dp"
                 android:drawableLeft="@drawable/id_userid"
                 android:drawablePadding="8dp"
                 android:text="***"
@@ -110,68 +107,28 @@
                 android:textSize="16sp" />
 
             <TextView
-                android:id="@+id/tv_sex"
+                android:id="@+id/tv_tel"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="16dp"
-                android:drawableLeft="@drawable/id_xingbie"
-                android:drawablePadding="8dp"
-                android:text="***"
-                android:textColor="@color/colorDrake"
-                android:textSize="20sp" />
-            <EditText
-                android:id="@+id/et_sex"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="16dp"
-                android:layout_marginRight="16dp"
-                android:background="@null"
-                android:hint="请输入性别"
-                android:maxLines="1"
-                android:textSize="16sp" />
-
-            <TextView
-                android:id="@+id/tv_eldertel"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="16dp"
+                android:layout_marginTop="8dp"
                 android:drawableLeft="@drawable/id_userphone"
                 android:drawablePadding="8dp"
                 android:text="***"
                 android:textColor="@color/colorDrake"
                 android:textSize="20sp" />
             <EditText
-                android:id="@+id/et_eldertel"
+                android:id="@+id/et_tel"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="16dp"
                 android:layout_marginRight="16dp"
                 android:background="@null"
-                android:hint="请输入电话"
+                android:hint="请输入子女电话"
                 android:inputType="number"
                 android:maxLines="1"
                 android:textSize="16sp" />
 
-            <TextView
-                android:id="@+id/tv_nation"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="16dp"
-                android:drawableLeft="@drawable/id_minzu"
-                android:drawablePadding="8dp"
-                android:text="***"
-                android:textColor="@color/colorDrake"
-                android:textSize="20sp" />
-            <EditText
-                android:id="@+id/et_nation"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="16dp"
-                android:layout_marginRight="16dp"
-                android:background="@null"
-                android:hint="请输入民族性质"
-                android:maxLines="1"
-                android:textSize="16sp" />
 
 
             <TextView
@@ -179,6 +136,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="16dp"
+                android:layout_marginTop="8dp"
                 android:drawableLeft="@drawable/id_shengri"
                 android:drawablePadding="8dp"
                 android:text="***"
@@ -196,40 +154,21 @@
                 android:textSize="16sp" />
 
 
-            <TextView
-                android:id="@+id/tv_eldertype"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="16dp"
-                android:drawableLeft="@drawable/id_laorenleixing"
-                android:drawablePadding="8dp"
-                android:text="***"
-                android:textColor="@color/colorDrake"
-                android:textSize="20sp" />
-            <EditText
-                android:id="@+id/et_eldertype"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="16dp"
-                android:layout_marginRight="16dp"
-                android:background="@null"
-                android:hint="请输入老人类型（如退休干部或普通老人）"
-                android:maxLines="1"
-                android:textSize="16sp" />
 
 
             <TextView
-                android:id="@+id/tv_elderage"
+                android:id="@+id/tv_age"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="16dp"
+                android:layout_marginTop="8dp"
                 android:drawableLeft="@drawable/id_nianling"
                 android:drawablePadding="8dp"
                 android:text="***"
                 android:textColor="@color/colorDrake"
                 android:textSize="20sp" />
             <EditText
-                android:id="@+id/et_elderage"
+                android:id="@+id/et_age"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="16dp"
@@ -241,17 +180,18 @@
 
 
             <TextView
-                android:id="@+id/tv_elderlive"
+                android:id="@+id/tv_live"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="16dp"
+                android:layout_marginTop="8dp"
                 android:drawableLeft="@drawable/id_useraddress"
                 android:drawablePadding="8dp"
                 android:text="***"
                 android:textColor="@color/colorDrake"
                 android:textSize="20sp" />
             <EditText
-                android:id="@+id/et_elderlive"
+                android:id="@+id/et_live"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="16dp"
@@ -263,115 +203,29 @@
 
 
             <TextView
-                android:id="@+id/tv_elderagency"
+                android:id="@+id/tv_blood"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="16dp"
-                android:drawableLeft="@drawable/id_shequ"
-                android:drawablePadding="8dp"
-                android:text="***"
-                android:textColor="@color/colorDrake"
-                android:textSize="20sp" />
-            <EditText
-                android:id="@+id/et_elderagency"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="16dp"
-                android:layout_marginRight="16dp"
-                android:background="@null"
-                android:hint="请输入所属社区"
-                android:maxLines="1"
-                android:textSize="16sp" />
-
-            <TextView
-                android:id="@+id/tv_emercontact"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="16dp"
-                android:drawableLeft="@drawable/id_yibaoleixing"
-                android:drawablePadding="8dp"
-                android:text="***"
-                android:textColor="@color/colorDrake"
-                android:textSize="20sp" />
-            <EditText
-                android:id="@+id/et_emercontact"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="16dp"
-                android:layout_marginRight="16dp"
-                android:background="@null"
-                android:hint="请输入紧急联系人"
-                android:maxLines="1"
-                android:textSize="16sp" />
-
-
-            <TextView
-                android:id="@+id/tv_emertel"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="16dp"
-                android:drawableLeft="@drawable/id_yibaoleixing"
-                android:drawablePadding="8dp"
-                android:text="***"
-                android:textColor="@color/colorDrake"
-                android:textSize="20sp" />
-            <EditText
-                android:id="@+id/et_emertel"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="16dp"
-                android:layout_marginRight="16dp"
-                android:background="@null"
-                android:hint="请输入联系人电话"
-                android:maxLines="1"
-                android:textSize="16sp" />
-
-
-            <TextView
-                android:id="@+id/tv_servicetype"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="16dp"
-                android:drawableLeft="@drawable/id_jibing"
-                android:drawablePadding="8dp"
-                android:text="***"
-                android:textColor="@color/colorDrake"
-                android:textSize="20sp" />
-            <EditText
-                android:id="@+id/et_servicetype"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="16dp"
-                android:layout_marginRight="16dp"
-                android:background="@null"
-                android:hint="请输入养老类型"
-                android:maxLines="1"
-                android:textSize="16sp" />
-
-
-            <TextView
-                android:id="@+id/tv_servicestate"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="16dp"
+                android:layout_marginTop="8dp"
                 android:drawableLeft="@drawable/id_xieye"
                 android:drawablePadding="8dp"
                 android:text="***"
                 android:textColor="@color/colorDrake"
                 android:textSize="20sp" />
             <EditText
-                android:id="@+id/et_servicestate"
+                android:id="@+id/et_blood"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="16dp"
                 android:layout_marginRight="16dp"
                 android:background="@null"
-                android:hint="请输入养老服务状态"
+                android:hint="请输入血型"
                 android:maxLines="1"
                 android:textSize="16sp" />
 
         </LinearLayout>
-    </ScrollView>
+
 
 
 </RelativeLayout>

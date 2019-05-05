@@ -1,32 +1,208 @@
 <?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
 
-
-    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-        xmlns:tools="http://schemas.android.com/tools"
+    <LinearLayout
+        android:id="@+id/id_top"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:orientation="vertical">
+        android:layout_height="164dp"
+        android:background="@drawable/note_topbackground"
+        android:orientation="vertical" />
 
-    <Button
-        android:id="@+id/button1"
+    <TextView
+        android:id="@+id/tv1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="8dp"
+        android:text="随记本"
+        android:textColor="@color/colorDrake"
+        android:textSize="48sp" />
+
+    <TextView
+        android:id="@+id/tv2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv1"
+        android:layout_marginLeft="16dp"
+        android:text="简要备忘录"
+        android:textColor="@color/colorDrakeGreen"
+        android:textSize="16sp" />
+    <ImageButton
+        android:id="@+id/btn_save"
+        android:src="@drawable/note_jishiben"
+        android:layout_alignParentRight="true"
+        android:layout_width="64dp"
+        android:layout_height="64dp"
+        android:layout_marginRight="16dp"
+        android:background="@drawable/bg_login"
+        android:layout_marginTop="100dp" />
+    <ImageButton
+        android:id="@+id/btn_show"
+        android:src="@drawable/note_chakan"
+        android:layout_alignParentLeft="true"
+        android:layout_width="64dp"
+        android:layout_height="64dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="100dp"
+        android:background="@drawable/bg_login"/>
+
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Send Request" />
-
-    <ScrollView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent" >
-
+        android:orientation="vertical"
+        android:layout_below="@+id/id_top"
+        android:layout_marginTop="8dp">
         <TextView
-            android:id="@+id/TextView1"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="hello_world" />
-    </ScrollView>
+            android:gravity="center"
+            android:text="-记下生活的美好-"
+            android:textColor="@color/colorGreen" />
+
+        <TextView
+            android:id="@+id/tv_note"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="8dp"
+            android:drawableLeft="@drawable/note_shijian"
+            android:drawablePadding="8dp"
+            android:text="备忘一"
+            android:textColor="@color/colorDrake"
+            android:textSize="20sp" />
+        <EditText
+            android:id="@+id/et_note"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:background="@null"
+            android:hint="点击输入"
+            android:maxLines="1"
+            android:textSize="16sp" />
+
+
+        <TextView
+            android:id="@+id/tv_note1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="8dp"
+            android:drawableLeft="@drawable/note_shijian"
+            android:drawablePadding="8dp"
+            android:text="备忘二"
+            android:textColor="@color/colorDrake"
+            android:textSize="20sp" />
+        <EditText
+            android:id="@+id/et_note1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:background="@null"
+            android:hint="点击输入"
+            android:maxLines="1"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/tv_note2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="8dp"
+            android:drawableLeft="@drawable/note_shijian"
+            android:drawablePadding="8dp"
+            android:text="备忘三"
+            android:textColor="@color/colorDrake"
+            android:textSize="20sp" />
+        <EditText
+            android:id="@+id/et_note2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:background="@null"
+            android:hint="点击输入"
+            android:maxLines="1"
+            android:textSize="16sp" />
+
+
+
+        <TextView
+            android:id="@+id/tv_note3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="8dp"
+            android:drawableLeft="@drawable/note_shijian"
+            android:drawablePadding="8dp"
+            android:text="备忘四"
+            android:textColor="@color/colorDrake"
+            android:textSize="20sp" />
+        <EditText
+            android:id="@+id/et_note3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:background="@null"
+            android:hint="点击输入"
+            android:maxLines="1"
+            android:textSize="16sp" />
 
 
 
 
-</LinearLayout>
+        <TextView
+            android:id="@+id/tv_note4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="8dp"
+            android:drawableLeft="@drawable/note_shijian"
+            android:drawablePadding="8dp"
+            android:text="备忘五"
+            android:textColor="@color/colorDrake"
+            android:textSize="20sp" />
+        <EditText
+            android:id="@+id/et_note4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:background="@null"
+            android:hint="点击输入"
+            android:maxLines="1"
+            android:textSize="16sp" />
+
+
+        <TextView
+            android:id="@+id/tv_note5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="8dp"
+            android:drawableLeft="@drawable/note_shijian"
+            android:drawablePadding="8dp"
+            android:text="备忘六"
+            android:textColor="@color/colorDrake"
+            android:textSize="20sp" />
+        <EditText
+            android:id="@+id/et_note5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:background="@null"
+            android:hint="点击输入"
+            android:maxLines="1"
+            android:textSize="16sp" />
+
+    </LinearLayout>
+</RelativeLayout>
 
 
